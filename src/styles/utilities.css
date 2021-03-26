@@ -1,9 +1,9 @@
 .highlight-text {
-  color: #28a745;
+  color: var(--complimentary-color);
 }
 
 .text-secondary {
-  color: #0284d0;
+  color: var(--triadic-color);
 }
 
 /* Button and background*/
@@ -14,7 +14,7 @@
   padding: 10px 30px;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: var(--primary-color);
 }
 
 .btn:hover {
@@ -23,18 +23,18 @@
 
 .btn-outline {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid var(--primary-color);
 }
 
 .btn-primary,
 .bg-primary {
-  background-color: #28a745;
+  background-color: var(--complimentary-color);
   color: white;
 }
 
 .btn-secondary,
 .bg-secondary {
-  background: #0284d0;
+  background: var(--triadic-color);
   color: #fff;
 }
 .btn-light,
@@ -45,8 +45,8 @@
 
 .bg-dark,
 .btn-dark {
-  background-color: #333;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /* flex row*/

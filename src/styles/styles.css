@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
 /* entire document */
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #333;
+  --complimentary-color: #28a745;
+  --triadic-color: #0284d0;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -8,14 +15,14 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-margin-top: 70px;
+  scroll-margin-top: 4rem;
 }
 
 /* base styles */
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   line-height: 1.6;
 }
 
@@ -120,10 +127,10 @@ img {
   align-items: center;
   justify-content: space-around;
   background-color: #333;
-  color: #fff;
+  color: var(--primary-color);
   opacity: 0.9;
   width: 100%;
-  min-height: 70px;
+  min-height: 4rem;
   position: fixed;
   top: 0px;
   transition: 0.5s;
@@ -151,11 +158,11 @@ img {
 
 .navbar-container .menu-items a {
   font-size: 1.2rem;
-  color: white;
+  color: var(--primary-color);
   padding: 10px 20px;
 }
 .navbar-container .menu-items a:hover {
-  border-bottom: #28a745 2px solid;
+  border-bottom: var(--complimentary-color) 2px solid;
 }
 
 /* Icons Section */
@@ -220,8 +227,8 @@ img {
 }
 
 .contact-form input:focus {
-  outline: #28a745;
-  border-color: #28a745;
+  outline: var(--complimentary-color);
+  border-color: var(--complimentary-color);
 }
 
 .contact-form input {
@@ -247,19 +254,19 @@ img {
 }
 
 .footer a {
-  color: white;
+  color: var(--primary-color);
   padding: 0 20px;
 }
 
 .footer a:hover {
-  color: #28a745;
+  color: var(--complimentary-color);
   padding: 0 20px;
 }
 
 /* blog post */
 .post h2 {
   padding-bottom: 10px;
-  border-bottom: #333 solid 1px;
+  border-bottom: var(--secondary-color) solid 1px;
 }
 
 /* lightbox */
