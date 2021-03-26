@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+/* entire document */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-margin-top: 70px;
+}
+
+/* base styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+ul {
+  font-size: 1rem;
+  list-style: none;
+}
+
+a {
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+}
+
+button {
+  font-size: 1.4rem;
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Hero */
+.hero * {
+  z-index: 10;
+}
+
+.hero {
+  background: url("../images/home/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.hero.blog {
+  background: url("../images/home/blog.jpg") no-repeat center center/cover;
+  height: 60vh;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* navbar */
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.9;
+  width: 100%;
+  min-height: 70px;
+  position: fixed;
+  top: 0px;
+  transition: 0.5s;
+  z-index: 11;
+}
+
+.navbar-top {
+  background: transparent;
+}
+.navbar-container .logo {
+  /* align-self: center;
+  justify-self: left; */
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* .navbar-container nav {
+  justify-self: right;
+  align-self: center;
+} */
+
+.navbar-container .menu-items {
+  display: flex;
+}
+
+.navbar-container .menu-items a {
+  font-size: 1.2rem;
+  color: white;
+  padding: 10px 20px;
+}
+.navbar-container .menu-items a:hover {
+  border-bottom: #28a745 2px solid;
+}
+
+/* Icons Section */
+
+.icon-block {
+  padding: 4vh 3vw;
+}
+
+.icon-block svg,
+.icon-block i {
+  border-radius: 50%;
+  background-color: seagreen;
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px 15px;
+}
+
+/* cases */
+.cases {
+  padding: 20px;
+}
+
+/* team */
+
+.team {
+  padding: 20px;
+}
+
+.team figure {
+  padding: 20px;
+}
+
+.team figure h4 {
+  margin-bottom: 5px;
+}
+
+.team img {
+  border-radius: 50%;
+}
+
+/* contact form */
+
+.contact-section h2 {
+  align-self: center;
+  text-align: center;
+}
+
+.contact-form {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-form .form-control {
+  padding: 10px;
+}
+
+.contact-form input {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contact-form input:focus {
+  outline: #28a745;
+  border-color: #28a745;
+}
+
+.contact-form input {
+  width: 100%;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 50px;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.footer .social {
+  padding: 10px;
+}
+
+.footer a {
+  color: white;
+  padding: 0 20px;
+}
+
+.footer a:hover {
+  color: #28a745;
+  padding: 0 20px;
+}
+
+/* blog post */
+.post h2 {
+  padding-bottom: 10px;
+  border-bottom: #333 solid 1px;
+}
+
+/* lightbox */
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#lightbox > img {
+  max-width: 50vw;
+  border: rgba(191, 191, 191, 0.3) solid 10px;
+  border-radius: 10px;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

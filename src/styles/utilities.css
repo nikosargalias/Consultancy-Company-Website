@@ -1,0 +1,155 @@
+.highlight-text {
+  color: #28a745;
+}
+
+.text-secondary {
+  color: #0284d0;
+}
+
+/* Button and background*/
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btn-primary,
+.bg-primary {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-secondary,
+.bg-secondary {
+  background: #0284d0;
+  color: #fff;
+}
+.btn-light,
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: #333;
+  color: white;
+}
+
+/* flex row*/
+
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* .flex-items > div {
+  padding: 20px 20px;
+} this (>) specifies, that only direct decendants nested within the parent element will be affected (so in our case, not the divs nested within child elements, just the direct child divs.) */
+
+/* Flex columns */
+.flex-2-columns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-2-columns .column {
+  /*min-width: 500px;  This allows the wrap to occur, because we are saying, if the width is below 500px, wrap them into 2.*/
+  /* display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1; */
+}
+
+.flex-2-columns img {
+  display: block;
+  width: 50%;
+  object-fit: cover;
+}
+
+.flex-2-columns .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+}
+
+/* cases */
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2vh;
+}
+
+.flex-row .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 10px;
+}
+
+.cases img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.cases img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* flex single */
+.flex-1-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.flex-1-column img {
+  max-height: 40vh;
+  max-width: 600px;
+  border-radius: 50px;
+  align-self: center;
+  /* object-fit: contain; */
+}
+
+/* divider */
+.child-divider {
+  margin: 20px 0px;
+}

@@ -1,0 +1,80 @@
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  * {
+    scroll-margin-top: 100px;
+    scroll-behavior: smooth;
+  }
+  .navbar-container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    min-height: 100px;
+  }
+
+  .navbar-container nav {
+    width: 100%;
+    display: flex;
+  }
+
+  .navbar-container .menu-items {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: white;
+    width: 100%;
+  }
+
+  .flex-items {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .flex-row img {
+    max-width: 80vw;
+    margin: 10px auto;
+  }
+
+  .flex-row .column {
+    padding: 0;
+    margin: 0;
+  }
+
+  .flex-2-columns {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-2-columns img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .flex-2-columns .content {
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+
+  /* lightbox */
+  #lightbox img {
+    max-width: 80%;
+  }
+}
