@@ -1,3 +1,5 @@
+"use strict";
+
 import {
   removeTransparentNavbar,
   addTransparentNavbar,
@@ -25,7 +27,9 @@ function checkIfScrolled() {
   appendElement(lightboxElement, document.body);
 })();
 
+const lightbox = document.querySelector("#lightbox");
 lightbox.onclick = hideLightbox;
+
 //ask spyros which is the more correct way to get the element.
 (function onclickLightboxImages() {
   // const images = document.querySelector("#cases").getElementsByTagName("img");

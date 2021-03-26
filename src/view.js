@@ -1,3 +1,4 @@
+"use strict";
 export function removeTransparentNavbar() {
   const navbar = document.getElementById("navbar");
   navbar.classList.remove("navbar-top");
